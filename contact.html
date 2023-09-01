@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Contact</title>
+
+  <!-- Stilizarea numărului de telefon -->
+  <style>
+    .phone-number {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .unselectable{
+      -webkit-user-select: none; /* Chrome, Safari, Opera */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none;
+    }
+  </style>
+
+ 
+</head>
+
+<body>
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4 unselectable" src="./imagini-contact-page/phone.jpg" alt="termopan cut" height="300">
+    <h1 class="display-5 fw-bold text-body-emphasis"></h1>
+    <div class="col-lg-6 mx-auto">
+
+      <!-- Numărul de telefon codat ca o ancoră pentru copiere la telefoane -->
+      <a class="lead mb-4 phone-number" href="tel:0773771610"><strong>0773 771 610</strong></a>
+
+      <!-- Bootstrap spacing class for spacing -->
+      <div class="mb-4"></div>
+
+      <button type="button" id="backButton" class="btn btn-primary btn-lg px-4 gap-3">Înapoi la pagina principală</button>
+    </div>
+  </div>
+
+  <script>
+    // Get a reference to the button element
+    const backButton = document.getElementById('backButton');
+
+    // Add a click event listener to the button
+    backButton.addEventListener('click', function() {
+      // Replace 'your-target-page.html' with the actual URL of the page you want to navigate to
+      window.location.href = './index.html';
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
